@@ -28,6 +28,6 @@ class HomeViewModel: ObservableObject {
         movies["Stand-Up Comedy"] = exampleMovies.shuffled()
         movies["New Release"] = exampleMovies.shuffled()
         movies["Watch It Again"] = exampleMovies.shuffled()
-        movies["Sci"] = exampleMovies.shuffled()
+        movies["Sci-Fi"] = exampleMovies.shuffled()
     }
 }
