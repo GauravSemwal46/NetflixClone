@@ -14,6 +14,8 @@ struct MovieDetailView: View {
     @State private var showSeasonPicker = false
     @State private var selectedSeason = 1
     
+    @Binding var movieDetailToShow: Movie?
+    
     var body: some View {
         ZStack {
             Color.black
@@ -24,7 +26,7 @@ struct MovieDetailView: View {
                     HStack {
                         Spacer()
                         Button {
-                            // Close this view
+                            movieDetailToShow = nil
                         } label: {
                             Image(systemName: "xmark.circle")
                                 .font(.system(size: 28))
@@ -109,7 +111,7 @@ struct MovieDetailView: View {
 }
 
 #Preview {
-    MovieDetailView(movie: exampleMovie5)
+    MovieDetailView(movie: exampleMovie5, movieDetailToShow: .constant(exampleMovie1))
 }
 
 struct MovieInfoSubheadlineView: View {
