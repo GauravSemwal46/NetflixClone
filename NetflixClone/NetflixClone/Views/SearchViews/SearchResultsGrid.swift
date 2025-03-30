@@ -19,7 +19,7 @@ struct SearchResultsGrid: View {
     ]
     
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 10) {
+        LazyVGrid(columns: columns, alignment: .leading, spacing: 10) {
             ForEach(movies, id: \.id) { movie in
                 StandardHomeMovieView(movie: movie)
                     .frame(height: 160)

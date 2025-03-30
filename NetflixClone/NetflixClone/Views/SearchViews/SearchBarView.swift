@@ -31,7 +31,7 @@ struct SearchBarView: View {
                     .onTapGesture {
                         isEditing = true
                     }
-                    .animation(.default)
+                    .animation(.default, value: text)
                 
                 if !text.isEmpty {
                     if isLoading {
@@ -68,7 +68,7 @@ struct SearchBarView: View {
                     }
                     .padding(.trailing, 10)
                     .transition(.move(edge: .trailing))
-                    .animation(.default)
+                    .animation(.default, value: isEditing)
                 }
             }
         }

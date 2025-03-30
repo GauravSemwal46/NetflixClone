@@ -37,7 +37,7 @@ struct HomeView: View {
             }
             if movieDetailToShow != nil {
                 MovieDetailView(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
-                    .animation(.easeIn)
+                    .animation(.easeIn, value: movieDetailToShow?.id)
                     .transition(.opacity)
             }
             
