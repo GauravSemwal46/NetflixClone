@@ -93,7 +93,9 @@ let exampleMovie1 =  Movie(
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
     episodes: allExampleEpisodes,
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "arrestedDevPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 let exampleMovie2 =  Movie(
     id: UUID().uuidString,
@@ -107,7 +109,9 @@ let exampleMovie2 =  Movie(
     creators: "Baron bo Odan, Jante Friese",
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [],
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "darkPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 let exampleMovie3 =  Movie(
     id: UUID().uuidString,
@@ -122,7 +126,9 @@ let exampleMovie3 =  Movie(
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [],
     promotionalHeadline: "New episodes coming soon",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "dirtyJohnPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 let exampleMovie4 =  Movie(
     id: UUID().uuidString,
@@ -136,7 +142,9 @@ let exampleMovie4 =  Movie(
     creators: "Baron bo Odan, Jante Friese",
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [],
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "ozarkPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 let exampleMovie5 =  Movie(
     id: UUID().uuidString,
@@ -151,7 +159,9 @@ let exampleMovie5 =  Movie(
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [],
     promotionalHeadline: "Watch season 5 now",
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "travelersPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 let exampleMovie6 =  Movie(
     id: UUID().uuidString,
@@ -165,7 +175,9 @@ let exampleMovie6 =  Movie(
     creators: "Baron bo Odan, Jante Friese",
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [],
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "whiteLinesPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 let exampleMovie7 =  Movie(
     id: UUID().uuidString,
@@ -179,7 +191,9 @@ let exampleMovie7 =  Movie(
     creators: "Baron bo Odan, Jante Friese",
     cast: "Louis Hofman, Oliver Masucci, Jordan Triebel",
     moreLikeThisMovies: [],
-    trailers: exampleTrailers
+    trailers: exampleTrailers,
+    previewImageName: "travelersPreview",
+    previewVideoUrl: exampleVideoUrl
 )
 
 var exampleMovies: [Movie] {

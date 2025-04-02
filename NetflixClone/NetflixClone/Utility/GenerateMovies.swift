@@ -64,7 +64,8 @@ func generateMovies(_ count: Int) -> [Movie] {
             moreLikeThisMovies: moreLikeThis,
             episodes: allEpisodes,
             promotionalHeadline: headline,
-            trailers: allTrailers
+            trailers: allTrailers,
+            previewImageName: ""
         )
         allMovies.append(movie)
     }

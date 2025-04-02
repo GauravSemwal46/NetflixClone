@@ -9,11 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init() {
-        UITabBar.appearance().isTranslucent = false
-        UITabBar.appearance().barTintColor = .black
-    }
-    
     var body: some View {
         TabView {
             HomeView()
@@ -43,6 +38,10 @@ struct ContentView: View {
                 }.tag(4)
         }
         .accentColor(.white)
+        .background(.black)
+        .onAppear {
+            UITabBar.appearance().barTintColor = .black
+        }
     }
 }
 
