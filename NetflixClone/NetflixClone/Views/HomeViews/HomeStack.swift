@@ -13,6 +13,8 @@ struct HomeStack: View {
     var selectedGenre: HomeGenre
     
     @Binding var movieDetailToShow: Movie?
+    @Binding var showPreviewFullScreen: Bool
+    @Binding var previewStartingIndex: Int
     
     var body: some View {
         ForEach(viewModel.allCategories, id: \.self) { category in
@@ -45,7 +47,7 @@ struct HomeStack: View {
         Color.black
             .ignoresSafeArea()
         ScrollView {
-            HomeStack(viewModel: HomeViewModel(), topRowSelection: .home, selectedGenre: .AllGenres, movieDetailToShow: .constant(nil))
+            HomeStack(viewModel: HomeViewModel(), topRowSelection: .home, selectedGenre: .AllGenres, movieDetailToShow: .constant(nil), showPreviewFullScreen: .constant(false), previewStartingIndex: .constant(0))
         }
         .foregroundColor(.white)
     }
